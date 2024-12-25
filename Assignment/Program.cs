@@ -1,4 +1,7 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
@@ -24,6 +27,15 @@ namespace Assignment
         {
             arr[0] = 23;
         }
+        #endregion
+
+        #region Q3 Method
+        static void SumSub(int num1 , int num2 , out int sum , out int sub)
+        {
+            sum = num1 + num2;
+            sub = num1 - num2;
+        }
+
         #endregion
 
         static void Main(string[] args)
@@ -68,7 +80,24 @@ namespace Assignment
             //Console.WriteLine($"Element 1 in array before Passing by Reference : {number[0]}");
             //PassByRefReferenceType(ref number);
             //Console.WriteLine($"Element 1 in array after Passing by Reference : {number[0]}");
+
+            #endregion
+
+            #region Q3
+            //3 - Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            //int FirstNumber = 0;
+            //int SecondNumber = 0;
+            //int sum;
+            //int sub;
+            //Console.Write("Enter the 1st Number : ");
             
+            //int.TryParse(Console.ReadLine(), out FirstNumber);
+            //Console.Write("Enter the 2nd Number : ");
+            //int.TryParse(Console.ReadLine(), out SecondNumber);
+
+            //SumSub(FirstNumber, SecondNumber, out sum , out sub);
+            //Console.WriteLine($"Sum of {FirstNumber} + {SecondNumber} = {sum} \nSub of {FirstNumber} - {SecondNumber} = {sub} ");
+
             #endregion
 
 
