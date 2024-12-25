@@ -16,13 +16,14 @@
             y = temp;
         }
 
-        public static int SumArray(int[] Arr)
+        public static int SumArray(ref int[] Arr)
         {
             // Sum + 1 = 1
             // 1 + 2 = 3
             // 3 + 3 = 6
             int Sum = 0;
-            Arr[0] = 100;
+            //Arr[0] = 100;
+            Arr=new int[] {4,5,6 };
             for (int i = 0; i < Arr.Length; i++)
             {
                 Sum += Arr[i];
@@ -172,6 +173,7 @@
             #endregion
 
             #region Reference Type
+            #region EX01
             #region By Value
 
             //int[] Numbers = { 1, 2, 3 };
@@ -186,8 +188,25 @@
             //Console.WriteLine(SumArray(Numbers));
             //Console.WriteLine(Numbers[0]);
             #endregion
+            #endregion
+
+            #region EX02
+            #region by Value
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]);
+            #endregion
+            #region by Ref
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers[0]);
+            #endregion
 
             #endregion
+
+            #endregion
+
+
         }
     }
 }
