@@ -92,6 +92,20 @@ namespace Assignment
             return Factorial;
         }
         #endregion
+
+        #region Q8 Method
+        static string ChangeChar(string s,int position , char letter)
+        {
+            if (position >= s.Length)
+                return "Invalid Position input";
+            char[] chars = s.ToCharArray();
+
+            chars[position]= letter;
+
+
+            return string.Join("", chars);
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q1
@@ -192,6 +206,27 @@ namespace Assignment
             // Console.WriteLine($"The Factorial of {Number} is {Fact(Number)}");
             //else
             //    Console.WriteLine("invalid input you have to enter Positive Number");
+
+
+            #endregion
+
+            #region Q8
+            //8-Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+            //Console.Write("Enter the String : ");
+            //string text = Console.ReadLine()??" ";
+
+            //Console.Write("Enter the position : ");
+            //int position = 0;
+            //int.TryParse(Console.ReadLine(),out position);
+
+            //Console.Write("Enter the new char : ");
+            //char newchar = ' ';
+            //char.TryParse(Console.ReadLine(), out newchar);
+
+            //string newtext = ChangeChar(text, position, newchar);
+
+            //Console.WriteLine(newtext);
+
 
 
             #endregion
