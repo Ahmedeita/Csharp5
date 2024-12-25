@@ -76,6 +76,22 @@ namespace Assignment
         }
 
         #endregion
+
+        #region Q7 Method 
+        static int Fact(int n)
+        {
+            int Factorial = 1;
+            if (n == 0)
+                return Factorial;
+
+            for (int i = 1; i <= n; i++)
+            {
+                Factorial *= i;
+            }
+
+            return Factorial;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q1
@@ -164,6 +180,18 @@ namespace Assignment
             //MinMaxArray(Numbers,ref min,ref max);
             //Console.WriteLine($"Minimum Value in the array is  {min}");
             //Console.WriteLine($"Maximum Value in the array is  {max}");
+
+
+            #endregion
+
+            #region Q7
+            //7-Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
+            //Console.Write("Enter the Number : ");
+            //int.TryParse(Console.ReadLine(), out int Number);
+            //if (Number >= 0)
+            // Console.WriteLine($"The Factorial of {Number} is {Fact(Number)}");
+            //else
+            //    Console.WriteLine("invalid input you have to enter Positive Number");
 
 
             #endregion
