@@ -8,8 +8,18 @@ namespace Assignment
 {
     internal class Employee
     {
-        public string? Name { get; set; }
+        public string? FName { get; set; }
+        public string? LName { get; set; }
+
+        Department Department { get; set; }
         
     
+    }
+    internal class Department
+    {
+        public string Name { get; set; }
+        public int Code { get; set; }
+
+        
     }
 }
