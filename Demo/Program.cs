@@ -2,6 +2,14 @@
 {
     internal class Program
     {
+        public static void PrintShape(int Count=10, string Pattern)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                Console.WriteLine(Pattern);
+            }
+        }
+
         static void Main(string[] args)
         {
 
@@ -97,6 +105,19 @@
             //}
 
             //Console.WriteLine(Emp?.Department?.Name ?? "Not Found");
+
+            #endregion
+
+            #region Functions (Prototype, Calling)
+            //PrintShape(10, "*-*"); 
+            //PrintShape(Pattern: "*-*", Count: 10); 
+            //PrintShape(); 
+            //Hello Mostafa
+            //Welcome To
+            //Route
+            //Console.WriteLine("Hello Mostafa\nWelcome To\tRoute");
+            //PrintShape("/*\\",10);
+
 
             #endregion
         }
