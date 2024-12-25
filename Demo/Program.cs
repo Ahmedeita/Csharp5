@@ -170,6 +170,24 @@
 
 
             #endregion
+
+            #region Reference Type
+            #region By Value
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]); 
+
+            #endregion
+
+            #region by Ref
+            //int[] Numbers = { 1, 2, 3 };
+
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]);
+            #endregion
+
+            #endregion
         }
     }
 }
