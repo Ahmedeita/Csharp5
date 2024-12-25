@@ -50,6 +50,23 @@ namespace Assignment
             return sum;
         }
         #endregion
+
+        #region Q5 Method
+        static bool IsPrime(int number)
+        {
+            if (number <= 1)
+                 return false; 
+            
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+                   if (number % i == 0)
+                        return false;
+                
+            
+
+            return true; 
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q1
@@ -122,7 +139,14 @@ namespace Assignment
 
             #endregion
 
+            #region Q5
+            //5-Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+                //Console.Write("Enter the Number : ");
+                //int.TryParse(Console.ReadLine(), out int Number);
 
+                //Console.WriteLine(IsPrime(Number));
+
+            #endregion
 
 
         }
