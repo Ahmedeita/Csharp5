@@ -67,6 +67,15 @@ namespace Assignment
             return true; 
         }
         #endregion
+
+        #region Q6 Methods
+
+        static void MinMaxArray(int [] array,ref int min,ref int max) {
+            max = array.Max(); 
+            min = array.Min();
+        }
+
+        #endregion
         static void Main(string[] args)
         {
             #region Q1
@@ -141,10 +150,21 @@ namespace Assignment
 
             #region Q5
             //5-Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
-                //Console.Write("Enter the Number : ");
-                //int.TryParse(Console.ReadLine(), out int Number);
+            //Console.Write("Enter the Number : ");
+            //int.TryParse(Console.ReadLine(), out int Number);
 
-                //Console.WriteLine(IsPrime(Number));
+            //Console.WriteLine(IsPrime(Number));
+
+            #endregion
+
+            #region Q6
+            //6-Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters.
+            //int[] Numbers = { 12, 17, 10, 4, 5, 6, 7, 8, 9, 45, 84, 3 };
+            //int min = 0, max  = 0;
+            //MinMaxArray(Numbers,ref min,ref max);
+            //Console.WriteLine($"Minimum Value in the array is  {min}");
+            //Console.WriteLine($"Maximum Value in the array is  {max}");
+
 
             #endregion
 
