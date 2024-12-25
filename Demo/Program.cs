@@ -9,7 +9,26 @@
                 Console.WriteLine(Pattern);
             }
         }
+        static void Swap( ref int x, ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
 
+        public static int SumArray(int[] Arr)
+        {
+            // Sum + 1 = 1
+            // 1 + 2 = 3
+            // 3 + 3 = 6
+            int Sum = 0;
+            Arr[0] = 100;
+            for (int i = 0; i < Arr.Length; i++)
+            {
+                Sum += Arr[i];
+            }
+            return Sum;
+        }
         static void Main(string[] args)
         {
 
@@ -117,6 +136,37 @@
             //Route
             //Console.WriteLine("Hello Mostafa\nWelcome To\tRoute");
             //PrintShape("/*\\",10);
+
+
+            #endregion
+
+            #region ValueType Parameters
+            #region By Value
+            //int A = 5;
+            //int B = 9;
+
+            //Console.WriteLine(A); // Output: 5
+            //Console.WriteLine(B); // Output: 9
+
+            //Swap(A, B);
+
+            //Console.WriteLine(A); // Output: 5
+            //Console.WriteLine(B); // Output: 9 
+            #endregion
+
+            #region By Reference
+            //int A = 5;
+            //int B = 9;
+
+            //Console.WriteLine(A); // Output: 5
+            //Console.WriteLine(B); // Output: 9
+
+            //Swap(ref A,ref B);
+
+            //Console.WriteLine(A); // Output: 5
+            //Console.WriteLine(B); // Output: 9 
+            #endregion
+
 
 
             #endregion
