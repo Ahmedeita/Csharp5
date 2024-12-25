@@ -38,6 +38,18 @@ namespace Assignment
 
         #endregion
 
+        #region Q4 Method
+        static int SumOfDigits(int num)
+        {
+            int sum =0 ;
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+
+            return sum;
+        }
+        #endregion
         static void Main(string[] args)
         {
             #region Q1
@@ -90,7 +102,7 @@ namespace Assignment
             //int sum;
             //int sub;
             //Console.Write("Enter the 1st Number : ");
-            
+
             //int.TryParse(Console.ReadLine(), out FirstNumber);
             //Console.Write("Enter the 2nd Number : ");
             //int.TryParse(Console.ReadLine(), out SecondNumber);
@@ -99,6 +111,18 @@ namespace Assignment
             //Console.WriteLine($"Sum of {FirstNumber} + {SecondNumber} = {sum} \nSub of {FirstNumber} - {SecondNumber} = {sub} ");
 
             #endregion
+
+            #region Q4
+            //4-Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.
+
+            //Console.Write("Enter the Number : ");
+            //int.TryParse(Console.ReadLine(), out int Number);
+
+            //Console.WriteLine($"The Sum of the digits of the number {Number} = {SumOfDigits(Number)}");
+
+            #endregion
+
+
 
 
         }
