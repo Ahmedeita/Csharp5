@@ -30,6 +30,12 @@
             }
             return Sum;
         }
+
+        public static void SumMul(int X, int Y, out int Sum, out int Mul)
+        {
+            Sum = X + Y;
+            Mul = X * Y;
+        }
         static void Main(string[] args)
         {
 
@@ -203,6 +209,18 @@
             #endregion
 
             #endregion
+
+            #endregion
+
+            #region Functions - Passing By Out
+            //int A = 10;
+            //int B = 20;
+            //int Sum, Mul;
+
+            //SumMul(A, B, out Sum, out Mul);
+
+            //Console.WriteLine(Sum);
+            //Console.WriteLine(Mul);
 
             #endregion
 
