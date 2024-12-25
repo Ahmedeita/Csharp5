@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -10,6 +12,17 @@
         static void PassByRef(ref int x)
         {
             x += 10;
+        }
+        #endregion
+
+        #region Q2 Methods
+        static void PassByValueReferenceType(int [] arr)
+        {
+            arr[0] = 23;
+        }
+        static void PassByRefReferenceType(ref int[] arr)
+        {
+            arr[0] = 23;
         }
         #endregion
 
@@ -32,6 +45,30 @@
             //PassByRef(ref number);
             //Console.WriteLine($"Number after Passing by Reference : {number}");
 
+            #endregion
+
+            #region Q2
+            /*2-Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example.
+             * Passing by value: When you send an arguments Reference type to a function by value, you are creating a variable in stack
+             *                   and store the same address of the original object so any changes to it will affect at the original object
+              
+             * Passing by Reference: When you send an arguments Reference type to a function by Reference, just rename the value in the stack with it's original address 
+                                     So any changes to it inside the fuction will affect at the original object
+             */
+
+            //int [] num = {1,2,3};
+            //Console.WriteLine($"Element 1 in array before Passing by Value : {num[0]}");
+            //PassByValueReferenceType(num);
+            //Console.WriteLine($"Element 1 in array after Passing by Value : {num[0]}");
+
+            //Console.WriteLine("\t\t\t********************************");
+
+            //int [] number = { 1, 2, 3 };
+
+            //Console.WriteLine($"Element 1 in array before Passing by Reference : {number[0]}");
+            //PassByRefReferenceType(ref number);
+            //Console.WriteLine($"Element 1 in array after Passing by Reference : {number[0]}");
+            
             #endregion
 
 
